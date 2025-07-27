@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://izmash.github.io/astro-pr-play/',
+  site: 'https://izmash.github.io/',
   base: '/astro-pr-play',
   integrations: [svelte()],
 

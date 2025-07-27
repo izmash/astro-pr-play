@@ -7,15 +7,15 @@ import pr_logo from '../images/Project_Reality_Dogtags_Logo_256.png';
 import pr_video from '../images/Project Reality： BF2 Standalone Trailer.mp4';
 ---
 
-<div class="w-full h-max relative mask-y-from-70% mask-y-to-95%">
+<div class="w-screen h-screen relative mask-y-from-70% mask-y-to-80% mask-x-from-70% mask-x-to-85%">
     <div class="absolute inset-0 m-auto h-fit w-fit">
         <div class="flex justify-center m-8">
             <Image src={pr_logo} alt="">
         </div>
         <PlayButton title="Download Project Reality" />
     </div>
-    <div>
-       <video autoplay muted loop  disablepictureinpicture class="object-cover w-full">
+    <div class="flex w-screen h-screen items-center justify-center">
+       <video autoplay muted loop  disablepictureinpicture class=" w-[1920px] h-[1080px] object-fill">
             <source src={pr_video} type="video/mp4">
        </video>
     </div>

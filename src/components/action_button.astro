@@ -1,0 +1,19 @@
+---
+interface Props {
+  variant?: 'download' | 'discord' | 'forum';
+  href: string;
+  target?: string;
+  title: string;
+}
+
+const { href ,target="_blank", title, variant = "download" } = Astro.props;
+---
+
+<a href={href} target={target} class:list={["font-bold text-3xl text-white border-2 rounded-sm p-2 hover:bg-white/30 duration-200", 
+variant==="download" ? "text-amber-300": 
+variant==="discord" ? "bg-[#5865F2] text-[#E0E3FF] border-[#E0E3FF]" 
+: ""]}>
+  <!-- Slot for adding icon via span tag -->
+  <slot />
+  <div class="inline-block">{title}</div>
+</a>

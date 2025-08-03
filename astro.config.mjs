@@ -10,6 +10,7 @@ export default defineConfig({
   site: 'https://izmash.github.io/',
   
   integrations: [svelte()],
+  
 
   vite: {
     plugins: [tailwindcss()]

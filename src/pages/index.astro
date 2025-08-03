@@ -4,7 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import LandingMedia from '../components/landing_media.astro';
 import CenteredContainer from '../components/centered_container.astro';
 import Footer from '../components/footer.astro';
-
+import SocialButtonsContainer from '../components/social-buttons-container.astro';
+import ActionButton from '../components/action_button.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -12,13 +13,14 @@ import Footer from '../components/footer.astro';
 <Layout>
     <LandingMedia />
     <CenteredContainer>
-        <section class="text-white">
-            <p>News</p>
-        </section>
-                <section class="text-white">
-            <p>News</p>
-        </section>
-    </CenteredContainer>
+        <SocialButtonsContainer>
+            <ActionButton href="https://forum.realitymod.com/" variant="forum" title="Visit Project Reality Forum">
 
+            </ActionButton>
+            <ActionButton href="https://discord.gg/tSsaU7F" variant="discord" title="Join Project Reality Discord">
+                <span class="before:content-[url('src/assets/discord.svg')]"></span>
+            </ActionButton>
+        </SocialButtonsContainer>
+    </CenteredContainer>
     <Footer/>   
 </Layout>
